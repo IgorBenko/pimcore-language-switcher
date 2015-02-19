@@ -14,7 +14,7 @@ If there is no coressponding page in other branch, then the parent node is retur
 Integrating language menu to your website is as easy as adding this to view:
 
 ```php
-// This example links to parallel pages but has a label of a branch (eg. En, It, De, Ja)
+// This example links to parallel pages but has a label of a branch (eg. En, It, De, ...)
 <ul>
     <?php
     $languageSwitcher = new LanguageSwitcher\Switcher($this->document);
@@ -28,19 +28,38 @@ Integrating language menu to your website is as easy as adding this to view:
 ```
 
 ```php
-// This example links to parallel pages but has a label of a branch (eg. En, It, De, Ja)
+// This example links to parallel pages and has a label of a parallel page (eg. Contacts, Contatti, Kontakt, ...)
 <ul>
     <?php
     $languageSwitcher = new LanguageSwitcher\Switcher($this->document);
     foreach ($languageSwitcher->getEntries() as $entry) {
         $path = $entry->getPath();
         $isActiveClass = $entry->isActive()?"active":"";
-        echo "<li class=\"{$isActiveClass}\"><a href=\"{$path}\">" . $entry->geLabel() . "</a></li>";
+        echo "<li class=\"{$isActiveClass}\"><a href=\"{$path}\">" . $entry->getLabel() . "</a></li>";
     }
     ?>
 </ul>
 ```
 
+```php
+// You can use any other property to display 
+<ul>
+    <?php
+    $languageSwitcher = new LanguageSwitcher\Switcher($this->document);
+    foreach ($languageSwitcher->getEntries() as $entry) {
+        $path = $entry->getPath();
+        $isActiveClass = $entry->isActive()?"active":"";
+        echo "<li class=\"{$isActiveClass}\"><a href=\"{$path}\">";
+        if ($entry->isActive()) {
+            echo $entry->getLabel();
+        } else {
+            echo $entry->getPage()->getProperty("shortLabel");
+        }
+        echo "</a></li>";
+    }
+    ?>
+</ul>
+```
 
 ## Switching between branches in the backend
 ![Switching between branches](readme/switch-branch-2.png)
