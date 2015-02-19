@@ -1,5 +1,5 @@
 {
-  "name": "IgorBenko/languageswitcher-plugin",
+  "name": "igor-benko/languageswitcher-plugin",
   "type": "pimcore-plugin",
   "license": "BSD-3-Clause",
   "description": "A Pimcore plugin for easier switching between languages in document hierarchies",
