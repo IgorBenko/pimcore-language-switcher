@@ -76,7 +76,9 @@ Home:
 ![Set parent node](readme/set-switcher-parent-node.png)
 
 ### Set branch roots
-Branch roots must be direct descendants of the parent node. You need to add a property with key ```languageSwitcherBranchRoot``` to each branch root. The property MUST be inheritable. Plugin setup procedure creates a predefined property for you that you can use.
+Branch roots must be direct descendants of the parent node. You need to add a property with key ```languageSwitcherBranchRoot``` to each branch root. 
+![Branch roots](readme/parent-node---branch-roots.png)
+The property MUST be inheritable. Plugin setup procedure creates a predefined property for you that you can use.
 After you create the property, drag and drop the branch root to Value field of property.
 
 ![Set branch roots 1](readme/set-branch-roots-1.png)
