@@ -8,6 +8,7 @@ Switching between branches is very easy. You can also open current page in all l
 
 If there is no coressponding page in other branch, then the parent node is returned.
 
+
 ## Frontend language menu
 
 Integrating language menu to your website is as easy as adding this to view:
@@ -40,6 +41,7 @@ Integrating language menu to your website is as easy as adding this to view:
 </ul>
 ```
 
+
 ## Switching between branches in the backend
 ![Switching between branches](readme/switch-branch-2.png)
 
@@ -55,6 +57,7 @@ Install it from Extension manager:
 ![Installing language switcher](readme/installing-language-switcher.png)
 
 This adds predefined property for selecting branch roots and website setting for selecting the parent node.
+
 
 ### Set parent node
 If your language structure is like this you don't need to change the parent node:
@@ -75,13 +78,14 @@ Home:
 ```
 ![Set parent node](readme/set-switcher-parent-node.png)
 
+
 ### Set branch roots
 Branch roots must be direct descendants of the parent node. You need to add a property with key ```languageSwitcherBranchRoot``` to each branch root.
 
 ![Branch roots](readme/parent-node---branch-roots.png)
 
 The property MUST be inheritable. Plugin setup procedure creates a predefined property for you that you can use.
-After you create the property, drag and drop the branch root to Value field of property.
+**After you create the property, drag and drop the branch root to Value field of property.**
 
 ![Set branch roots 1](readme/set-branch-roots-1.png)
 ![Set branch roots 2](readme/set-branch-roots-2.png)
