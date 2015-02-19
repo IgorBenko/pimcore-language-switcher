@@ -1,0 +1,35 @@
+children:
+- key: en
+  children:
+  - key: en_entry_1
+    children:
+    - key: en_entry_1_1
+    - key: en_entry_1_2
+  - key: en_entry_2
+  - key: en_entry_3
+- key: de
+  children:
+  - key: de_entry_1
+    children:
+    - key: de_entry_1_1
+    - key: de_entry_1_2
+  - key: de_entry_2
+  - key: de_entry_3
+- key: it
+  children:
+  - key: it_entry_1
+    children:
+    - key: it_entry_1_1
+    - key: it_entry_1_2
+  - key: it_entry_2
+  - key: it_entry_3
+  - key: it_entry_orphaned
+- key: jp
+  exclude: true
+  children:
+  - key: jp_entry_1
+    children:
+    - key: jp_entry_1_1
+    - key: jp_entry_1_2
+  - key: jp_entry_2
+  - key: jp_entry_3

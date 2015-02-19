@@ -1,0 +1,8 @@
+.pimcore_icon_langueageswitcher_medium {
+    background-image: url(../img/langswitchericon.png);
+}
+
+.ls_menu_lang {
+    color: #777777;
+    font-style: italic;
+}

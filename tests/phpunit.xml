@@ -1,0 +1,7 @@
+<phpunit bootstrap="bootstrap.php" colors="true" syntaxCheck="false" verbose="false">
+<testsuites>
+    <testsuite name="LanguageSwitcher">
+        <directory>tests</directory>
+    </testsuite>
+</testsuites>
+</phpunit>

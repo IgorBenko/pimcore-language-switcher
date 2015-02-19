@@ -1,0 +1,23 @@
+{
+  "name": "IgorBenko/languageswitcher-plugin",
+  "type": "pimcore-plugin",
+  "license": "BSD-3-Clause",
+  "description": "A Pimcore plugin for easier switching between languages in document hierarchies",
+  "keywords": ["pimcore","plugin","localization", "navigation", "language", "local"],
+  "homepage": "http://www.linkedin.com/in/benkoigor",
+  "authors": [
+    {
+      "name": "Igor Benko",
+      "email": "igor@viziens.si",
+      "homepage": "http://www.linkedin.com/in/benkoigor",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "pimcore/installer-plugin": ">=1",
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "symfony/yaml": ">=2.6.4"
+  }
+}
