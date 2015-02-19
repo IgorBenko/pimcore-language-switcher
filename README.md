@@ -73,6 +73,7 @@ Home:
     - de
     - it
 ```
+![Set parent node](readme/set-switcher-parent-node.png)
 
 ### Set branch roots
 Branch roots must be direct descendants of the parent node. You need to add a property with key ```languageSwitcherBranchRoot``` to each branch root. The property MUST be inheritable. Plugin setup procedure creates a predefined property for you that you can use.
