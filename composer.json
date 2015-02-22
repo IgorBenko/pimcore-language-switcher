@@ -4,7 +4,7 @@
   "license": "BSD-3-Clause",
   "description": "A Pimcore plugin for easier switching between languages in document hierarchies",
   "keywords": ["pimcore", "plugin", "localization", "navigation", "language", "locale"],
-  "homepage": "http://www.linkedin.com/in/benkoigor",
+  "homepage": "https://github.com/IgorBenko/pimcore-language-switcher",
   "authors": [
     {
       "name": "Igor Benko",
@@ -21,3 +21,4 @@
     "symfony/yaml": ">=2.6.4"
   }
 }
+
