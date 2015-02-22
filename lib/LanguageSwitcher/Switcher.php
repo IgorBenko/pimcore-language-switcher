@@ -82,7 +82,7 @@ class Switcher {
             if ($branchRoot instanceof Document\Page) {
 
                 /* @var \Pimcore\Model\Document $topDoc */
-                if ($this->currentBranchRoot) {
+                if ($this->currentBranchRoot instanceof Document\Page) {
                     $isActive = $branchRoot->getId() == $this->currentBranchRoot->getId();
                 } else {
                     $isActive = false;
