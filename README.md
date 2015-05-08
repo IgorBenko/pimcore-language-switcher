@@ -69,6 +69,7 @@ You can either switch/open just one language or open a page in all languages at 
 ## Installing
 Add this line to the ```require``` section of your composer.json and install it with composer:
 ```
+"igor-benko-pimcore-plugin/language-switcher": "dev-master"
 ```
 
 Install it from Extension manager:
